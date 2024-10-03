@@ -1,0 +1,30 @@
+# php-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php
+  namespace: myapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php
+  template:
+    metadata:
+      labels:
+        app: php
+    spec:
+      containers:
+      - name: php
+        image: php:apache
+        ports:
+        - containerPort: 80
+        env:
+        - name: DB_HOST
+          value: "postgres"  # The name of the PostgreSQL service
+        - name: DB_USER
+          value: "myuser"
+        - name: DB_PASSWORD
+          value: "mypassword"
+        - name: DB_NAME
+          value: "mydb"

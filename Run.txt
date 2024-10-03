@@ -1,0 +1,9 @@
+Apply the manifests using kubectl:
+
+
+
+kubectl apply -f postgres-pvc.yaml
+kubectl apply -f postgres-deployment.yaml
+kubectl apply -f postgres-service.yaml
+kubectl apply -f php-deployment.yaml
+kubectl apply -f php-service.yaml

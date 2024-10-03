@@ -1,0 +1,3 @@
+kubectl create namespace myapp(any app name)
+
+kubectl apply -f php-ingress.yaml

@@ -1,0 +1,9 @@
+Get the Node IP: Find the external IP address of one of your cluster nodes:
+
+
+kubectl get nodes -o wide
+
+
+Using Ingress
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
