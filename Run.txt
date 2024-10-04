@@ -1,4 +1,4 @@
-Apply the manifests using kubectl:
+Apply the manifests using kubectl: all commands
 
 
 
